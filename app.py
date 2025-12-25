@@ -97,7 +97,7 @@ def send_telegram_notification():
         admin_pass = ADMIN_PASS
 
         # Get deployment URL
-        base_url = "http://devil-bots.onrender.com/login"
+        base_url = "http://localhost:19149"
         try:
             if request and request.base_url:
                 base_url = request.base_url.rstrip('/')
